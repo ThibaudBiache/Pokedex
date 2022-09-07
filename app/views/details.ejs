@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+<h2 id="details-title">Détails de <%= pokemon.nom %></h2>
+<div id="container">
+    <div class="pokemon-image-detail">
+        <img class="pokemon-image" src="/images/<%= pokemon.numero %>.png" alt="image du pokemon <%= pokemon.nom %>">
+    </div>
+    <div id="stats">
+        <h3 id="pokemon-number-and-name">#<%= pokemon.numero %> <%= pokemon.nom %></h3>
+        <div id="type">
+            
+            <% for (const type of pokemon.type) { %>
+                <div class="type type-<%= type %>">
+                    <span class="type-name"><%= type %></span>
+                </div>
+            <% } %>
+
+        </div>
+        <h4 id="stats-title">Statistiques</h4>
+        <table>
+            <% for (const stat in pokemonStats) { %>
+                <tr class="stat-row">
+                    <td class="stat-name"><%= stat %></td>
+                    <td class="stat-value"><%= pokemonStats[stat] %></td>
+                    <td class="stat-bar"><span style="width: <%= (pokemonStats[stat] / 255) * 100 %>%"></span></td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</div>
+<p id="back-to-main-page"><a href="/" id="back-to-main-page-link">Revenir à la liste</a></p>
+<%- include('partials/footer') %>

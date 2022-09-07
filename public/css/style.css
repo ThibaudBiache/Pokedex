@@ -1,0 +1,284 @@
+#header-title-link{
+    text-decoration: none;
+    color: #c14040;
+}
+
+#header-title-link:hover{
+    color: #e00b0b;
+}
+
+.header-link{
+    text-decoration: none;
+    color: #c14040;
+}
+
+.header-link:hover{
+    color: #e00b0b;
+}
+
+body{
+    font-family: 'Bree Serif', sans-serif;
+    margin: 1rem 1.5rem;
+    background-color: #c14040;
+}
+
+#header{
+    background-color: #efe3e3;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+h1, h2{
+    color: #c14040;
+    word-spacing: 0.5rem;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+#pokemon-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pokemon-thumbnail{
+    background-color: #982c2c;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 31.5%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.pokemon-thumbnail-link{
+    text-decoration: none;
+}
+
+.pokemon-image{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.pokemon-image-detail{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-number-and-name{
+    color: #f9d3d3;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+/*--------- Détails --------*/
+
+#details-title{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    color: #fff;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#stats{
+    background-color: #ab3838;
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem;
+    width: 50%;
+}
+
+#pokemon-number-and-name{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#type{
+    display: flex;
+}
+
+.type{
+    padding: .8rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.type-name{
+    text-transform: capitalize;
+}
+
+.type-acier{
+    background-color: #aab;
+}
+
+.type-combat{
+    background-color: #b54;
+}
+
+.type-dragon{
+    background-color: #76e;
+}
+
+.type-eau{
+    background-color: #39f;
+}
+
+.type-electrik{
+    background-color: #fb3;
+}
+
+.type-feu{
+    background-color: #f42;
+}
+
+.type-glace{
+    background-color: #7df;
+}
+
+.type-insecte{
+    background-color: #ab2;
+}
+
+.type-normal{
+    background-color: #bab;
+}
+
+.type-plante{
+    background-color: #7c5;
+}
+
+.type-poison{
+    background-color: #a59;
+}
+
+.type-psy{
+    background-color: #f59;
+}
+
+.type-roche{
+    background-color: #ba6;
+}
+
+.type-sol{
+    background-color: #db5;
+}
+
+.type-spectre{
+    background-color: #66b;
+}
+
+.type-tenebres{
+    background-color: #654;
+}
+
+.type-vol{
+    background-color: #69f;
+}
+
+#stats-title{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+table{
+    table-layout: auto;
+    width: 100%;
+    border-spacing: 0.5rem;
+}
+
+.stat-name{
+    width: 30%;
+}
+
+.stat-value{
+    width: 15%;
+}
+
+.stat-bar{
+    width: 55%;
+    background-color: #632b2b;
+    border-radius: 0.3rem;
+    height: 1rem;
+    padding: 0;
+}
+
+.stat-bar>span{
+    background-color: #fff;
+    display: block;
+    height: 100%;
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+#back-to-main-page{
+    text-align: center;
+}
+
+#back-to-main-page-link{
+    color: #f9d3d3;
+    text-decoration: none;
+}
+
+#back-to-main-page-link:hover{
+    color: #ffc83d;
+}
+
+
+/*------------- TYPES --------------*/
+
+#types-p{
+    color: #fff;
+}
+
+#all-types{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.type-list{
+    width: 24%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.type-list>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-------------- 404 ---------------*/
+
+#notfound-title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#notfound-gif{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
